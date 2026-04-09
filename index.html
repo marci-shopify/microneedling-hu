@@ -111,42 +111,40 @@
 
     /* HERO */
     .hero {
-      min-height: 88vh;
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 48px;
-      align-items: center;
-      padding: 80px 24px 60px;
-      max-width: 1200px;
-      margin: 0 auto;
       position: relative;
-    }
-    .hero-text { position: relative; z-index: 1; }
-    .hero-image {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-    .hero-image img {
+      min-height: 92vh;
       width: 100%;
-      min-height: 580px;
-      display: block;
-      object-fit: contain;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
     }
-
-    /* floating glow behind hero image */
-    .hero-image::before {
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .hero-bg picture,
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .hero-bg::after {
       content: '';
       position: absolute;
-      inset: 10% 5%;
-      background: radial-gradient(ellipse at center, rgba(59,130,246,0.18) 0%, transparent 70%);
-      pointer-events: none;
-      z-index: 0;
-      border-radius: 50%;
-      filter: blur(40px);
+      inset: 0;
+      background:
+        linear-gradient(to right, rgba(10,12,16,0.92) 0%, rgba(10,12,16,0.6) 45%, rgba(10,12,16,0.1) 100%),
+        linear-gradient(to top, rgba(10,12,16,0.7) 0%, transparent 40%);
     }
-    .hero-image img { position: relative; z-index: 1; }
+    .hero-text {
+      position: relative;
+      z-index: 1;
+      max-width: 580px;
+      padding: 0 48px 80px 64px;
+    }
 
     .hero-eyebrow {
       display: inline-flex;
@@ -168,21 +166,23 @@
     }
     .hero h1 {
       font-family: var(--serif);
-      font-size: clamp(40px, 6.5vw, 78px);
-      line-height: 1.05;
+      font-size: clamp(44px, 6vw, 86px);
+      line-height: 1.03;
       letter-spacing: -0.02em;
       margin-bottom: 28px;
       color: var(--ink);
+      text-shadow: 0 2px 24px rgba(0,0,0,0.5);
     }
     .hero h1 em {
       font-style: italic;
       color: var(--blue2);
     }
     .hero-lead {
-      font-size: clamp(16px, 1.8vw, 18px);
-      color: var(--ink2);
+      font-size: clamp(15px, 1.6vw, 17px);
+      color: rgba(232,237,245,0.78);
       margin-bottom: 44px;
       line-height: 1.65;
+      max-width: 460px;
     }
     .hero-actions {
       display: flex;
@@ -192,20 +192,21 @@
     }
     .hero-scroll {
       position: absolute;
-      bottom: 24px;
-      left: 24px;
+      bottom: 28px;
+      right: 40px;
+      z-index: 2;
       display: flex;
       align-items: center;
       gap: 10px;
-      color: var(--ink3);
-      font-size: 12px;
-      letter-spacing: 0.08em;
+      color: rgba(232,237,245,0.35);
+      font-size: 11px;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
     }
     .hero-scroll-line {
       width: 40px;
       height: 1px;
-      background: var(--ink3);
+      background: rgba(232,237,245,0.3);
       animation: scrollline 2s ease-in-out infinite;
     }
     @keyframes scrollline {
@@ -214,9 +215,14 @@
     }
 
     @media (max-width: 700px) {
-      .hero { grid-template-columns: 1fr; min-height: auto; padding: 60px 20px 40px; gap: 32px; }
-      .hero-image { order: -1; }
-      .hero-image img { min-height: 280px; }
+      .hero { min-height: 88vh; align-items: flex-end; }
+      .hero-bg img { object-position: 65% top; }
+      .hero-bg::after {
+        background: linear-gradient(to top, rgba(10,12,16,0.96) 0%, rgba(10,12,16,0.55) 55%, rgba(10,12,16,0.15) 100%);
+      }
+      .hero-text { padding: 0 24px 60px; max-width: 100%; }
+      .hero h1 { font-size: clamp(38px, 10vw, 56px); }
+      .hero-scroll { display: none; }
     }
 
     /* BUTTONS */
@@ -730,6 +736,14 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-bg">
+      <picture>
+        <source media="(max-width: 700px)" srcset="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/Nevtelen_1500_x_1501_keppont_4.webp?v=1774515055">
+        <source media="(min-width: 701px)" srcset="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/DSC04517.webp?v=1774519071">
+        <img src="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/DSC04517.webp?v=1774519071"
+             alt="Microneedling kezelés">
+      </picture>
+    </div>
     <div class="hero-text">
       <div class="hero-eyebrow">Bőrgyógyászati eljárás</div>
       <h1>A bőr<br><em>regeneráció</em><br>tudománya.</h1>
@@ -741,14 +755,6 @@
         </a>
         <a href="#mi-ez" class="btn-secondary">Mi az a microneedling?</a>
       </div>
-    </div>
-    <div class="hero-image">
-      <picture>
-        <source media="(max-width: 700px)" srcset="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/Nevtelen_1500_x_1501_keppont_4.webp?v=1774515055">
-        <source media="(min-width: 701px)" srcset="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/DSC04517.webp?v=1774519071">
-        <img src="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/DSC04517.webp?v=1774519071"
-             alt="STINGER ONE dermastamp microneedling eszköz">
-      </picture>
     </div>
     <div class="hero-scroll">
       <div class="hero-scroll-line"></div>
