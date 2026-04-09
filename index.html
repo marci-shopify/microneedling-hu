@@ -36,6 +36,7 @@
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { overflow-x: hidden; }
 
     :root {
       --bg: #0a0c10;
@@ -215,13 +216,13 @@
     }
 
     @media (max-width: 700px) {
-      .hero { min-height: 88vh; align-items: flex-end; }
-      .hero-bg img { object-position: 65% top; }
+      .hero { min-height: 75vh; align-items: flex-end; }
+      .hero-bg picture, .hero-bg img { object-position: 55% top; object-fit: cover; }
       .hero-bg::after {
         background: linear-gradient(to top, rgba(10,12,16,0.96) 0%, rgba(10,12,16,0.55) 55%, rgba(10,12,16,0.15) 100%);
       }
-      .hero-text { padding: 0 24px 60px; max-width: 100%; }
-      .hero h1 { font-size: clamp(38px, 10vw, 56px); }
+      .hero-text { padding: 0 20px 52px; max-width: 100%; }
+      .hero h1 { font-size: clamp(34px, 9vw, 52px); }
       .hero-scroll { display: none; }
     }
 
