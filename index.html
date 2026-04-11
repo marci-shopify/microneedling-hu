@@ -3,1116 +3,880 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Microneedling – Minden, amit tudni kell | microneedling.hu</title>
-  <meta name="description" content="Mi az a microneedling? Hogyan működik, mire jó, klinikában és otthon egyaránt. Tudományos alapon, érthetően elmagyarázva.">
+  <title>Microneedling &amp; Mikrotűzés – Teljes útmutató | Dermastamp, Dermaroller | microneedling.hu</title>
+  <meta name="description" content="Mikrotűzés (microneedling) teljes útmutató: tűmélység, dermastamp vs dermaroller, otthoni protokoll, hajra, arcra, aknéhegekre – tudományos alapon.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://microneedling.hu/">
-
-  <meta property="og:title" content="Microneedling – Minden, amit tudni kell">
-  <meta property="og:description" content="Mi az a microneedling? Hogyan működik, mire jó, klinikában és otthon egyaránt. Tudományos alapon.">
+  <meta property="og:title" content="Microneedling &amp; Mikrotűzés – Teljes útmutató">
   <meta property="og:url" content="https://microneedling.hu/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="hu_HU">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Microneedling – Minden, amit tudni kell az eljárásról",
-    "description": "Mi az a microneedling, hogyan működik, mire jó — klinikában és otthon egyaránt.",
-    "inLanguage": "hu",
-    "url": "https://microneedling.hu/",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Dermastamp",
-      "url": "https://dermastamp.hu"
-    }
-  }
-  </script>
-
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Microneedling és mikrotűzés – Teljes útmutató","inLanguage":"hu","url":"https://microneedling.hu/","publisher":{"@type":"Organization","name":"Dermastamp.hu","url":"https://dermastamp.hu"}}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { overflow-x: hidden; }
-
     :root {
       --bg: #0a0c10;
-      --bg2: #10141c;
-      --bg3: #161d28;
-      --border: rgba(255,255,255,0.07);
-      --border2: rgba(255,255,255,0.13);
-      --ink: #e8edf5;
-      --ink2: rgba(232,237,245,0.6);
-      --ink3: rgba(232,237,245,0.32);
+      --bg2: #12161e;
+      --bg3: #1a2030;
       --blue: #3b82f6;
-      --blue2: #60a5fa;
-      --blue-dim: rgba(59,130,246,0.12);
-      --blue-dim2: rgba(59,130,246,0.06);
-      --blue-glow: rgba(59,130,246,0.2);
+      --blue-dim: rgba(59,130,246,0.10);
       --green: #34d399;
-      --green-dim: rgba(52,211,153,0.08);
-      --serif: 'DM Serif Display', Georgia, serif;
+      --green-dim: rgba(52,211,153,0.10);
+      --amber: #f59e0b;
+      --amber-dim: rgba(245,158,11,0.10);
+      --red: #f87171;
+      --red-dim: rgba(248,113,113,0.10);
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: rgba(255,255,255,0.08);
+      --serif: 'DM Serif Display', serif;
       --sans: 'Figtree', sans-serif;
-      --radius: 12px;
-      --radius-lg: 20px;
+      --r: 12px;
     }
-
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--ink);
-      font-family: var(--sans);
-      font-size: 16px;
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.7; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1,h2,h3,h4 { font-family: var(--serif); line-height: 1.25; }
+    img { max-width: 100%; height: auto; display: block; }
 
     /* NAV */
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(10,12,16,0.88);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 24px;
-      height: 56px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .nav-logo {
-      font-family: var(--serif);
-      font-size: 18px;
-      color: var(--ink);
-      text-decoration: none;
-      letter-spacing: 0.02em;
-    }
-    .nav-logo span { color: var(--blue2); }
-    .nav-cta {
-      background: var(--blue);
-      color: #fff;
-      font-size: 13px;
-      font-weight: 700;
-      padding: 8px 18px;
-      border-radius: 100px;
-      text-decoration: none;
-      transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
-      white-space: nowrap;
-    }
-    .nav-cta:hover {
-      background: var(--blue2);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 20px var(--blue-glow);
-    }
+    .nav { position: sticky; top: 0; z-index: 100; background: rgba(10,12,16,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { font-family: var(--serif); font-size: 20px; color: var(--text); }
+    .nav-cta { background: var(--blue); color: #fff; padding: 8px 18px; border-radius: 999px; font-weight: 600; font-size: 14px; white-space: nowrap; }
+    .nav-cta:hover { background: #2563eb; text-decoration: none; }
 
     /* HERO */
-    .hero {
-      position: relative;
-      min-height: 92vh;
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      align-items: flex-end;
-    }
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-    }
-    .hero-bg picture,
-    .hero-bg img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;
-      object-position: center top;
-    }
-    .hero-bg::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(to right, rgba(10,12,16,0.92) 0%, rgba(10,12,16,0.6) 45%, rgba(10,12,16,0.1) 100%),
-        linear-gradient(to top, rgba(10,12,16,0.7) 0%, transparent 40%);
-    }
-    .hero-text {
-      position: relative;
-      z-index: 1;
-      max-width: 580px;
-      padding: 0 48px 80px 64px;
-    }
-
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--blue2);
-      margin-bottom: 28px;
-    }
-    .hero-eyebrow::before {
-      content: '';
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: var(--blue2);
-    }
-    .hero h1 {
-      font-family: var(--serif);
-      font-size: clamp(44px, 6vw, 86px);
-      line-height: 1.03;
-      letter-spacing: -0.02em;
-      margin-bottom: 28px;
-      color: var(--ink);
-      text-shadow: 0 2px 24px rgba(0,0,0,0.5);
-    }
-    .hero h1 em {
-      font-style: italic;
-      color: var(--blue2);
-    }
-    .hero-lead {
-      font-size: clamp(15px, 1.6vw, 17px);
-      color: rgba(232,237,245,0.78);
-      margin-bottom: 44px;
-      line-height: 1.65;
-      max-width: 460px;
-    }
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-    }
-    .hero-scroll {
-      position: absolute;
-      bottom: 28px;
-      right: 40px;
-      z-index: 2;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: rgba(232,237,245,0.35);
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-    }
-    .hero-scroll-line {
-      width: 40px;
-      height: 1px;
-      background: rgba(232,237,245,0.3);
-      animation: scrollline 2s ease-in-out infinite;
-    }
-    @keyframes scrollline {
-      0%, 100% { transform: scaleX(1); opacity: 0.32; }
-      50% { transform: scaleX(0.5); opacity: 0.65; }
-    }
-
-    @media (max-width: 700px) {
-      .hero { min-height: 75vh; align-items: flex-end; }
-      .hero-bg picture, .hero-bg img { object-position: 55% top; object-fit: cover; }
-      .hero-bg::after {
-        background: linear-gradient(to top, rgba(10,12,16,0.96) 0%, rgba(10,12,16,0.55) 55%, rgba(10,12,16,0.15) 100%);
-      }
-      .hero-text { padding: 0 20px 52px; max-width: 100%; }
-      .hero h1 { font-size: clamp(34px, 9vw, 52px); }
-      .hero-scroll { display: none; }
-    }
-
-    /* BUTTONS */
-    .btn-primary {
-      background: var(--blue);
-      color: #fff;
-      font-weight: 700;
-      font-size: 15px;
-      padding: 14px 28px;
-      border-radius: 100px;
-      text-decoration: none;
-      transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .btn-primary:hover {
-      background: var(--blue2);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 28px var(--blue-glow);
-    }
-    .btn-secondary {
-      color: var(--ink2);
-      font-size: 15px;
-      font-weight: 500;
-      text-decoration: none;
-      padding: 14px 4px;
-      border-bottom: 1px solid var(--border2);
-      transition: color 0.15s, border-color 0.15s;
-    }
-    .btn-secondary:hover { color: var(--ink); border-color: var(--ink2); }
+    .hero { padding: 80px 20px 70px; text-align: center; max-width: 820px; margin: 0 auto; }
+    .hero-eyebrow { display: inline-block; background: var(--blue-dim); color: var(--blue); border: 1px solid rgba(59,130,246,0.25); border-radius: 999px; padding: 4px 14px; font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(36px,6vw,64px); margin-bottom: 20px; }
+    .hero h1 em { font-style: italic; color: var(--green); }
+    .hero-lead { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 auto 32px; }
+    .hero-cta { display: inline-block; background: var(--blue); color: #fff; padding: 14px 32px; border-radius: 999px; font-weight: 700; font-size: 16px; }
+    .hero-cta:hover { background: #2563eb; text-decoration: none; }
 
     /* STATS BAR */
-    .stats-bar {
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      background: var(--bg2);
-      padding: 28px 24px;
-    }
-    .stats-inner {
-      max-width: 900px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--border);
-    }
-    .stat {
-      background: var(--bg2);
-      padding: 20px 28px;
-      text-align: center;
-    }
-    .stat-num {
-      font-family: var(--serif);
-      font-size: 36px;
-      color: var(--blue2);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-    .stat-label {
-      font-size: 13px;
-      color: var(--ink2);
-      line-height: 1.4;
-    }
+    .stats-bar { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .stats-inner { max-width: 1100px; margin: 0 auto; padding: 28px 20px; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; text-align: center; }
+    .stat-num { font-family: var(--serif); font-size: 38px; color: var(--green); display: block; }
+    .stat-lbl { font-size: 14px; color: var(--muted); }
 
-    /* SECTION COMMON */
-    .section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 80px 24px;
-    }
-    .section-tag {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--blue2);
-      margin-bottom: 16px;
-    }
-    .section-title {
-      font-family: var(--serif);
-      font-size: clamp(28px, 4vw, 44px);
-      line-height: 1.15;
-      margin-bottom: 20px;
-      letter-spacing: -0.01em;
-    }
-    .section-lead {
-      font-size: 17px;
-      color: var(--ink2);
-      max-width: 620px;
-      margin-bottom: 48px;
-      line-height: 1.65;
-    }
-    .divider {
-      height: 1px;
-      background: var(--border);
-      max-width: 900px;
-      margin: 0 auto;
-    }
+    /* SECTION SHELL */
+    .section { max-width: 1100px; margin: 0 auto; padding: 72px 20px; }
+    .section-title { font-size: clamp(26px,4vw,42px); margin-bottom: 12px; }
+    .section-sub { color: var(--muted); font-size: 17px; max-width: 640px; margin-bottom: 40px; }
 
-    /* WHAT GRID */
-    .what-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-top: 8px;
-    }
-    .what-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 32px;
-      transition: border-color 0.2s, transform 0.2s;
-    }
-    .what-card:hover { border-color: rgba(59,130,246,0.3); transform: translateY(-2px); }
-    .what-card-icon {
-      width: 44px;
-      height: 44px;
-      background: var(--blue-dim);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-      font-size: 20px;
-    }
-    .what-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
-    .what-card p { font-size: 14px; color: var(--ink2); line-height: 1.6; }
-    @media (max-width: 600px) { .what-grid { grid-template-columns: 1fr; } }
+    /* WHAT-CARDS */
+    .what-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+    .what-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r); padding: 24px; }
+    .what-card h3 { font-family: var(--sans); font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--green); }
+    .what-card p { font-size: 15px; color: var(--muted); }
 
-    /* HOW IT WORKS — timeline */
-    .timeline {
-      position: relative;
-      padding-left: 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 15px;
-      top: 0;
-      bottom: 0;
-      width: 1px;
-      background: linear-gradient(to bottom, var(--blue), rgba(59,130,246,0.1));
-    }
-    .timeline-item {
-      position: relative;
-      padding: 0 0 40px 28px;
-    }
-    .timeline-item:last-child { padding-bottom: 0; }
-    .timeline-dot {
-      position: absolute;
-      left: -32px;
-      top: 4px;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: var(--blue-dim);
-      border: 2px solid var(--blue);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .timeline-dot::after {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--blue2);
-    }
-    .timeline-label {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--blue2);
-      margin-bottom: 8px;
-    }
-    .timeline-item h3 {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      line-height: 1.3;
-    }
-    .timeline-item p {
-      font-size: 15px;
-      color: var(--ink2);
-      line-height: 1.65;
-    }
+    /* TIMELINE */
+    .timeline { display: flex; flex-direction: column; gap: 0; position: relative; padding-left: 36px; }
+    .timeline::before { content:''; position:absolute; left:11px; top:0; bottom:0; width:2px; background:var(--border); }
+    .tl-item { position: relative; padding: 0 0 32px 24px; }
+    .tl-dot { position:absolute; left:-25px; top:4px; width:14px; height:14px; border-radius:50%; background:var(--bg); border:2px solid var(--blue); }
+    .tl-title { font-weight: 700; margin-bottom: 4px; }
+    .tl-body { font-size: 15px; color: var(--muted); }
 
-    /* KLINIKA vs OTTHON */
-    .compare-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    .compare-card {
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-    }
-    .compare-header {
-      padding: 24px 28px 20px;
-      border-bottom: 1px solid var(--border);
-      background: var(--bg2);
-    }
-    .compare-badge {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 100px;
-      margin-bottom: 14px;
-    }
-    .compare-badge.clinic {
-      background: rgba(59,130,246,0.15);
-      color: var(--blue2);
-    }
-    .compare-badge.home {
-      background: rgba(52,211,153,0.12);
-      color: var(--green);
-    }
-    .compare-header h3 {
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-    .compare-header p {
-      font-size: 13px;
-      color: var(--ink2);
-      line-height: 1.5;
-    }
-    .compare-body { padding: 24px 28px; }
-    .compare-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border);
-      gap: 16px;
-    }
-    .compare-row:last-child { border-bottom: none; }
-    .compare-key {
-      font-size: 13px;
-      color: var(--ink3);
-      white-space: nowrap;
-    }
-    .compare-val {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--ink);
-      text-align: right;
-    }
-    @media (max-width: 640px) { .compare-grid { grid-template-columns: 1fr; } }
+    /* DEPTH BARS */
+    .depth-list { display: flex; flex-direction: column; gap: 12px; }
+    .depth-item { display: flex; align-items: center; gap: 14px; }
+    .depth-label { width: 120px; font-size: 14px; color: var(--muted); flex-shrink: 0; }
+    .depth-bar-wrap { flex: 1; background: var(--bg3); border-radius: 999px; overflow: hidden; height: 10px; }
+    .depth-bar { height: 100%; border-radius: 999px; background: var(--blue); }
+    .depth-item.hl .depth-label { color: var(--green); font-weight: 700; }
+    .depth-item.hl .depth-bar { background: var(--green); }
+    .depth-badge { font-size: 12px; background: var(--green-dim); color: var(--green); border: 1px solid rgba(52,211,153,.3); border-radius: 999px; padding: 2px 10px; flex-shrink: 0; }
 
-    /* BENEFITS */
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-    .benefit-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      transition: border-color 0.2s, transform 0.2s;
-      position: relative;
-      overflow: hidden;
-    }
-    .benefit-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: var(--blue);
-      opacity: 0.4;
-      transition: opacity 0.2s;
-    }
-    .benefit-card:hover { border-color: rgba(59,130,246,0.3); transform: translateY(-2px); }
-    .benefit-card:hover::before { opacity: 0.8; }
-    .benefit-icon { font-size: 24px; margin-bottom: 14px; }
-    .benefit-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
-    .benefit-card p { font-size: 13px; color: var(--ink2); line-height: 1.6; }
-    @media (max-width: 640px) { .benefits-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 420px) { .benefits-grid { grid-template-columns: 1fr; } }
+    /* TABS */
+    .tab-wrap { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; }
+    .tab-nav { display: flex; border-bottom: 1px solid var(--border); overflow-x: auto; }
+    .tab-btn { background: none; border: none; color: var(--muted); font-family: var(--sans); font-size: 14px; font-weight: 600; padding: 14px 20px; cursor: pointer; white-space: nowrap; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color .2s, border-color .2s; }
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active { color: var(--blue); border-bottom-color: var(--blue); }
+    .tab-panel { display: none; padding: 24px; }
+    .tab-panel.active { display: block; }
+
+    /* DEPTH TABLE */
+    .depth-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .depth-table th { text-align: left; padding: 10px 12px; color: var(--muted); font-weight: 600; font-size: 13px; border-bottom: 1px solid var(--border); }
+    .depth-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: top; }
+    .depth-table tr:last-child td { border-bottom: none; }
+    .depth-table tr.hl td { background: rgba(52,211,153,.05); }
+    .depth-table tr.hl td:first-child { color: var(--green); font-weight: 700; }
+    .clinic-badge { font-size: 11px; background: rgba(245,158,11,0.12); color: var(--amber); border: 1px solid rgba(245,158,11,.3); border-radius: 999px; padding: 1px 8px; display: inline-block; }
+
+    /* BENEFIT CARDS */
+    .benefit-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .benefit-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; }
+    .benefit-icon { font-size: 26px; margin-bottom: 10px; }
+    .benefit-card h3 { font-family: var(--sans); font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .benefit-card p { font-size: 14px; color: var(--muted); }
+
+    /* SCALP / HAJ */
+    .hl-stat-row { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 40px; }
+    .hl-stat { flex: 1 1 160px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; text-align: center; }
+    .hl-stat-num { color: var(--green); font-family: var(--serif); font-size: 32px; display: block; }
+    .hl-stat-lbl { font-size: 13px; color: var(--muted); }
+    .scalp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .scalp-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; }
+    .scalp-card h3 { font-family: var(--sans); font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .scalp-card p { font-size: 14px; color: var(--muted); }
+
+    /* COMPARE GRID */
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .compare-col { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r); padding: 24px; }
+    .compare-col h3 { font-family: var(--sans); font-weight: 700; margin-bottom: 16px; }
+    .compare-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .compare-list li { font-size: 14px; color: var(--muted); padding-left: 22px; position: relative; }
+    .compare-list li::before { content: attr(data-icon); position: absolute; left: 0; }
 
     /* PRODUCT SHOWCASE */
-    .product-showcase {
-      margin-top: 60px;
-      display: grid;
-      grid-template-columns: 1fr 1.6fr;
-      gap: 48px;
-      align-items: center;
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      padding: 40px;
-    }
-    .product-showcase-img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .product-showcase-img img {
-      width: 100%;
-      max-width: 220px;
-      display: block;
-      object-fit: contain;
-      filter: drop-shadow(0 8px 32px rgba(59,130,246,0.2));
-    }
-    .product-showcase-text h3 {
-      font-family: var(--serif);
-      font-size: clamp(22px, 3vw, 32px);
-      line-height: 1.2;
-      margin-bottom: 16px;
-    }
-    .product-showcase-text p {
-      font-size: 15px;
-      color: var(--ink2);
-      line-height: 1.65;
-      margin-bottom: 14px;
-    }
-    @media (max-width: 640px) {
-      .product-showcase { grid-template-columns: 1fr; gap: 28px; padding: 28px 24px; }
-      .product-showcase-img img { max-width: 160px; }
-    }
+    .product-showcase { margin-top: 32px; background: var(--bg2); border: 1px solid rgba(59,130,246,.25); border-radius: var(--r); padding: 28px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+    .product-showcase h3 { font-family: var(--sans); font-weight: 700; font-size: 18px; margin-bottom: 8px; }
+    .product-showcase p { font-size: 15px; color: var(--muted); margin-bottom: 16px; }
+    .product-text { flex: 1 1 260px; }
+    .btn-primary { display: inline-block; background: var(--blue); color: #fff; padding: 12px 28px; border-radius: 999px; font-weight: 700; font-size: 15px; }
+    .btn-primary:hover { background: #2563eb; text-decoration: none; }
 
-    /* FAQ */
-    .faq-list { display: flex; flex-direction: column; gap: 0; }
-    .faq-item {
-      border-bottom: 1px solid var(--border);
-    }
-    .faq-item:first-child { border-top: 1px solid var(--border); }
-    .faq-q {
-      width: 100%;
-      background: none;
-      border: none;
-      color: var(--ink);
-      font-family: var(--sans);
-      font-size: 16px;
-      font-weight: 600;
-      text-align: left;
-      padding: 22px 0;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      transition: color 0.15s;
-    }
-    .faq-q:hover { color: var(--blue2); }
-    .faq-icon {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      border: 1px solid var(--border2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      font-weight: 400;
-      color: var(--ink3);
-      transition: border-color 0.15s, color 0.15s, transform 0.25s;
-    }
-    .faq-item.open .faq-icon {
-      transform: rotate(45deg);
-      border-color: var(--blue);
-      color: var(--blue2);
-    }
-    .faq-a {
-      font-size: 15px;
-      color: var(--ink2);
-      line-height: 1.7;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease, padding 0.35s ease;
-    }
-    .faq-item.open .faq-a { max-height: 400px; padding-bottom: 22px; }
+    /* TRIPLE COMPARE */
+    .triple-compare { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .triple-col { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r); padding: 24px; }
+    .triple-col.featured { border-color: rgba(59,130,246,.35); }
+    .triple-col h3 { font-family: var(--sans); font-weight: 700; font-size: 16px; margin-bottom: 4px; }
+    .triple-badge { display: inline-block; font-size: 11px; background: var(--blue-dim); color: var(--blue); border: 1px solid rgba(59,130,246,.25); border-radius: 999px; padding: 2px 10px; margin-bottom: 12px; }
+    .triple-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .triple-list li { font-size: 14px; color: var(--muted); padding-left: 18px; position: relative; }
+    .triple-list li::before { content: '·'; position: absolute; left: 0; color: var(--blue); }
 
-    /* CTA */
-    .cta-section {
-      background: var(--bg2);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 80px 24px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .cta-section::before {
-      content: '';
-      position: absolute;
-      top: -80px; left: 50%;
-      transform: translateX(-50%);
-      width: 600px; height: 300px;
-      background: radial-gradient(ellipse at center, rgba(59,130,246,0.1) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .cta-inner {
-      max-width: 620px;
-      margin: 0 auto;
-      position: relative;
-    }
-    .cta-inner .section-title { font-size: clamp(30px, 4.5vw, 52px); margin-bottom: 16px; }
-    .cta-inner p { font-size: 17px; color: var(--ink2); line-height: 1.65; margin-bottom: 40px; }
-    .cta-product-box {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      background: var(--bg3);
-      border: 1px solid rgba(59,130,246,0.2);
-      border-radius: var(--radius);
-      padding: 20px 24px;
-      margin-bottom: 32px;
-      text-align: left;
-    }
-    .cta-product-icon {
-      font-size: 28px;
-      flex-shrink: 0;
-      width: 52px;
-      height: 52px;
-      background: var(--blue-dim);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .cta-product-info h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
-    .cta-product-info p { font-size: 13px; color: var(--ink2); line-height: 1.45; margin-bottom: 0; }
+    /* CRITERIA GRID */
+    .criteria-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .criteria-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r); padding: 18px; }
+    .criteria-card h3 { font-family: var(--sans); font-size: 14px; font-weight: 700; margin-bottom: 6px; color: var(--blue); }
+    .criteria-card p { font-size: 14px; color: var(--muted); }
+
+    /* BRIDGE BOX */
+    .bridge-box { margin-top: 32px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; background: var(--bg2); border: 1px solid rgba(59,130,246,.25); border-radius: var(--r); padding: 24px; }
+    .bridge-box-text { flex: 1 1 220px; }
+    .bridge-box-text h3 { font-family: var(--sans); font-weight: 700; margin-bottom: 6px; }
+    .bridge-box-text p { font-size: 14px; color: var(--muted); }
+
+    /* DO / DON'T */
+    .do-dont-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .do-box, .dont-box { border-radius: var(--r); padding: 24px; }
+    .do-box { background: var(--green-dim); border: 1px solid rgba(52,211,153,.25); }
+    .dont-box { background: var(--red-dim); border: 1px solid rgba(248,113,113,.25); }
+    .do-box h3 { color: var(--green); font-family: var(--sans); margin-bottom: 14px; }
+    .dont-box h3 { color: var(--red); font-family: var(--sans); margin-bottom: 14px; }
+    .do-dont-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .do-dont-list li { font-size: 14px; padding-left: 22px; position: relative; }
+    .do-box .do-dont-list li::before { content: '\2713'; position: absolute; left: 0; color: var(--green); font-weight: 700; }
+    .dont-box .do-dont-list li::before { content: '\2715'; position: absolute; left: 0; color: var(--red); font-weight: 700; }
+    .do-dont-list li span { color: var(--muted); }
+
+    /* CALLOUTS */
+    .callout-tip { background: var(--blue-dim); border-left: 3px solid var(--blue); border-radius: 0 var(--r) var(--r) 0; padding: 14px 18px; font-size: 15px; margin: 20px 0; }
+    .callout-warn { background: var(--amber-dim); border-left: 3px solid var(--amber); border-radius: 0 var(--r) var(--r) 0; padding: 14px 18px; font-size: 15px; margin: 20px 0; color: var(--text); }
+    .callout-tip strong, .callout-warn strong { display: block; margin-bottom: 4px; }
+
+    /* STUDIES ACCORDION */
+    .study-list { display: flex; flex-direction: column; gap: 10px; }
+    .study-item { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; }
+    .study-q { display: flex; align-items: center; gap: 12px; padding: 16px 20px; cursor: pointer; background: none; border: none; width: 100%; text-align: left; font-family: var(--sans); font-size: 15px; font-weight: 600; color: var(--text); }
+    .study-q:hover { background: rgba(255,255,255,.03); }
+    .study-icon { margin-left: auto; font-size: 18px; color: var(--muted); transition: transform .25s; flex-shrink: 0; }
+    .study-item.open .study-icon { transform: rotate(45deg); }
+    .study-a { display: none; padding: 14px 20px 18px; font-size: 14px; color: var(--muted); line-height: 1.7; border-top: 1px solid var(--border); }
+    .study-item.open .study-a { display: block; }
+    .study-year { font-size: 12px; background: var(--bg3); color: var(--muted); border-radius: 999px; padding: 2px 10px; flex-shrink: 0; }
+
+    /* FAQ ACCORDION */
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+    .faq-item { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; }
+    .faq-q { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 20px; cursor: pointer; background: none; border: none; width: 100%; text-align: left; font-family: var(--sans); font-size: 15px; font-weight: 600; color: var(--text); }
+    .faq-q:hover { background: rgba(255,255,255,.03); }
+    .faq-icon { font-size: 20px; color: var(--muted); transition: transform .25s; flex-shrink: 0; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 20px 18px; font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* CTA SECTION */
+    .cta-section { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 72px 20px; text-align: center; }
+    .cta-inner { max-width: 640px; margin: 0 auto; }
+    .cta-section h2 { font-size: clamp(28px,4vw,44px); margin-bottom: 16px; }
+    .cta-section p { color: var(--muted); font-size: 17px; margin-bottom: 32px; }
 
     /* FOOTER */
-    footer {
-      padding: 48px 24px;
-      text-align: center;
-      border-top: 1px solid var(--border);
-    }
-    .footer-brand {
-      font-family: var(--serif);
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-    .footer-brand span { color: var(--blue2); }
-    footer p { font-size: 13px; color: var(--ink3); margin-bottom: 12px; }
-    footer a { color: var(--ink2); font-size: 14px; text-decoration: none; border-bottom: 1px solid var(--border2); padding-bottom: 2px; transition: color 0.15s; }
-    footer a:hover { color: var(--blue2); }
+    .footer { padding: 32px 20px; text-align: center; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); }
+    .footer a { color: var(--muted); }
+    .footer a:hover { color: var(--text); }
 
-    /* FADE UP */
-    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
-    .fade-up.visible { opacity: 1; transform: none; }
+    /* TWO-COL LAYOUT */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
 
-    /* NEEDLE DEPTH VISUAL */
-    .depth-visual {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 36px 32px;
-      margin-top: 48px;
+    /* DIVIDER */
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .stats-inner { grid-template-columns: 1fr; gap: 12px; }
+      .what-grid, .compare-grid, .do-dont-grid, .scalp-grid, .criteria-grid { grid-template-columns: 1fr; }
+      .benefit-grid { grid-template-columns: 1fr 1fr; }
+      .triple-compare { grid-template-columns: 1fr; }
+      .two-col { grid-template-columns: 1fr; }
+      .product-showcase { flex-direction: column; }
+      .bridge-box { flex-direction: column; }
+      .tab-btn { font-size: 13px; padding: 12px 14px; }
     }
-    .depth-visual h3 {
-      font-family: var(--serif);
-      font-size: 22px;
-      margin-bottom: 24px;
-    }
-    .depth-bars { display: flex; flex-direction: column; gap: 12px; }
-    .depth-bar-row {
-      display: grid;
-      grid-template-columns: 160px 1fr 80px;
-      gap: 12px;
-      align-items: center;
-    }
-    .depth-bar-label { font-size: 13px; color: var(--ink2); text-align: right; }
-    .depth-bar-track {
-      height: 10px;
-      background: var(--bg3);
-      border-radius: 100px;
-      overflow: hidden;
-    }
-    .depth-bar-fill {
-      height: 100%;
-      border-radius: 100px;
-      background: linear-gradient(90deg, var(--blue), var(--blue2));
-      transform-origin: left;
-      transform: scaleX(0);
-      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .depth-bar-fill.animated { transform: scaleX(1); }
-    .depth-bar-val {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--blue2);
-    }
-    @media (max-width: 500px) {
-      .depth-bar-row { grid-template-columns: 100px 1fr 60px; gap: 8px; }
-      .depth-bar-label { font-size: 12px; }
+    @media (max-width: 480px) {
+      .benefit-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 32px; }
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a class="nav-logo" href="https://microneedling.hu">microneedling<span>.hu</span></a>
-    <a class="nav-cta" href="https://dermastamp.hu" rel="noopener">STINGER ONE™ →</a>
-  </nav>
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-logo">microneedling.hu</span>
+    <a class="nav-cta" href="https://dermastamp.hu/products/dermastamp?utm_source=microneedling-hu&utm_medium=referral&utm_campaign=bridge#ProductInfo-template--29103183954252__main">Dermastamp megnézése &rarr;</a>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg">
-      <picture>
-        <source media="(max-width: 700px)" srcset="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/Nevtelen_1500_x_1501_keppont_4.webp?v=1774515055">
-        <source media="(min-width: 701px)" srcset="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/DSC04517.webp?v=1774519071">
-        <img src="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/DSC04517.webp?v=1774519071"
-             alt="Microneedling kezelés">
-      </picture>
-    </div>
-    <div class="hero-text">
-      <div class="hero-eyebrow">Bőrgyógyászati eljárás</div>
-      <h1>A bőr<br><em>regeneráció</em><br>tudománya.</h1>
-      <p class="hero-lead">A microneedling ma az egyik legjobban dokumentált kollagénindukciós eljárás. Klinikán hallottad először — most otthon is elvégezheted, ugyanazzal a tudományos alappal.</p>
-      <div class="hero-actions">
-        <a href="https://dermastamp.hu" class="btn-primary" rel="noopener">
-          Dermastamp.hu eszközök
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#mi-ez" class="btn-secondary">Mi az a microneedling?</a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <div class="hero-scroll-line"></div>
-      Görgess
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-eyebrow">Tudományos útmutató</span>
+  <h1>Microneedling &amp; mikrotűzés &ndash;<br><em>minden, amit tudni kell</em></h1>
+  <p class="hero-lead">Dermastamp, derma stamp, dermaroller, derma roller, dermapen &ndash; tűmélységtől a protokollig. Otthoni és klinikai mikrotűzés teljes körű, tudományos alapú összefoglalója.</p>
+  <a class="hero-cta" href="#mi-ez">Olvasd el az útmutatót &darr;</a>
+</section>
 
-  <!-- STATS -->
-  <div class="stats-bar">
-    <div class="stats-inner">
-      <div class="stat">
-        <div class="stat-num">1mm</div>
-        <div class="stat-label">elegendő mélység<br>kollagénindukciós hatáshoz</div>
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div>
+      <span class="stat-num">1 mm</span>
+      <span class="stat-lbl">univerzális otthoni tűmélység</span>
+    </div>
+    <div>
+      <span class="stat-num">4&ndash;6&times;</span>
+      <span class="stat-lbl">magasabb kollagéntermelés után</span>
+    </div>
+    <div>
+      <span class="stat-num">72 ó</span>
+      <span class="stat-lbl">sejtmegújulási ciklus indul el</span>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- MI AZ A MICRONEEDLING -->
+<section class="section" id="mi-ez">
+  <h2 class="section-title">Mi az a microneedling (mikrotűzés)?</h2>
+  <p class="section-sub">A microneedling, más nevén mikrotűzés, kollagénindukciós terápia (CIT) vagy percutan kollagénindukció (PCI) &ndash; egy minimálisan invazív bőrkezelési módszer, amely apró tűszúrásokkal indítja el a bőr természetes regenerációs folyamatát.</p>
+
+  <div class="what-grid">
+    <div class="what-card">
+      <h3>Hogyan működik?</h3>
+      <p>Az eszköz apró tűi mikrocsatornákat hoznak létre a bőr felső rétegein. Ez kontrollált sérülést okoz, amely aktiválja a fibroblasztokat &ndash; ezek a sejtek termelik a kollagént és az elasztint.</p>
+    </div>
+    <div class="what-card">
+      <h3>Mit vált ki a bőrben?</h3>
+      <p>A mikrosérülések hatására vérlemezkék aktiválódnak, növekedési faktorok (PDGF, TGF-&beta;) szabadulnak fel, és beindítja a bőr sebgyógyulási kaszkádját &ndash; az eredmény sűrűbb, rugalmasabb bőr.</p>
+    </div>
+    <div class="what-card">
+      <h3>Kollagénindukciós terápia (CIT)</h3>
+      <p>A kollagén a bőr &bdquo;állványzata&rdquo;. A 25 éves kor után évente ~1%-ot veszítünk belőle. A mikrotűzés ezt a folyamatot lassítja és részben visszafordítja természetes módon, kémia nélkül.</p>
+    </div>
+    <div class="what-card">
+      <h3>Percutan kollagénindukció (PCI)</h3>
+      <p>A PCI elnevezés a &bdquo;percutan&rdquo; (bőrön át ható) beavatkozásra utal. Leírja, hogy az aktív anyagok &ndash; pl. hialuronsav, peptidek, réz-peptidek &ndash; a mikrosérüléseken keresztül mélyebbre kerülhetnek.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- HOGYAN MŰKÖDIK -->
+<section class="section" id="hogyan-mukodik">
+  <div class="two-col">
+    <div>
+      <h2 class="section-title">Hogyan zajlik le a bőrben?</h2>
+      <p class="section-sub">A mikrotűzés egy háromfázisú biológiai folyamatot indít el:</p>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-title">0&ndash;72 óra: Gyulladásos fázis</div>
+          <div class="tl-body">A bőr természetes immunválasza beindul. Vérlemezkék érkeznek a sérüléshez, növekedési faktorokat szabadítanak fel (EGF, PDGF, TGF-&alpha;/&beta;). Enyhe vörösség, melegség normális.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-title">3&ndash;14 nap: Proliferatív fázis</div>
+          <div class="tl-body">Fibroblasztok aktiválódnak és elkezdenek kollagén III-at termelni. Új erek képződnek (angiogenezis). A bőr szerkezete belülről épül újra.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-title">2 hét &ndash; 2 év: Remodelling fázis</div>
+          <div class="tl-body">A kollagén III fokozatosan kollagén I-gyé alakul, ami tartósabb és erősebb. A bőr vastagodik, a hegek halványodnak, a pórusok szűkülnek.</div>
+        </div>
       </div>
-      <div class="stat">
-        <div class="stat-num">4–6×</div>
-        <div class="stat-label">kezelés ajánlott<br>egy kúra alatt</div>
+    </div>
+    <div>
+      <h2 class="section-title" style="font-size:22px; margin-bottom:20px;">Tűmélység hatása</h2>
+      <div class="depth-list">
+        <div class="depth-item">
+          <span class="depth-label">0,2&ndash;0,3 mm</span>
+          <div class="depth-bar-wrap"><div class="depth-bar" style="width:10%"></div></div>
+        </div>
+        <div class="depth-item">
+          <span class="depth-label">0,5 mm</span>
+          <div class="depth-bar-wrap"><div class="depth-bar" style="width:22%"></div></div>
+        </div>
+        <div class="depth-item hl">
+          <span class="depth-label">1,0 mm &#9733;</span>
+          <div class="depth-bar-wrap"><div class="depth-bar" style="width:45%"></div></div>
+          <span class="depth-badge">Otthoni optimum</span>
+        </div>
+        <div class="depth-item">
+          <span class="depth-label">1,5 mm</span>
+          <div class="depth-bar-wrap"><div class="depth-bar" style="width:62%"></div></div>
+        </div>
+        <div class="depth-item">
+          <span class="depth-label">2,0 mm</span>
+          <div class="depth-bar-wrap"><div class="depth-bar" style="width:78%"></div></div>
+        </div>
+        <div class="depth-item">
+          <span class="depth-label">2,5&ndash;3,0 mm</span>
+          <div class="depth-bar-wrap"><div class="depth-bar" style="width:100%"></div></div>
+        </div>
       </div>
-      <div class="stat">
-        <div class="stat-num">72h</div>
-        <div class="stat-label">aktív regeneráció<br>kezelés után</div>
+      <div class="callout-tip" style="margin-top:24px">
+        <strong>Miért 1 mm az otthoni aranyszabály?</strong>
+        Eléri az irhát (dermist), ahol a fibroblasztok és a kollagén él, de nem lépi át a szubkután réteget. Hatékony stimuláció, kisebb fertőzési kockázat.
       </div>
     </div>
   </div>
+</section>
 
-  <!-- MI AZ -->
-  <section class="section" id="mi-ez">
-    <div class="section-tag">Az alapok</div>
-    <h2 class="section-title">Mi az a microneedling?</h2>
-    <p class="section-lead">Apró, kontrollált mikrosérülések sorozata — amelyekre a bőr szabályozott gyógyulással válaszol: kollagén és elasztin termelésével.</p>
+<hr class="divider">
 
-    <div class="what-grid">
-      <div class="what-card fade-up">
-        <div class="what-card-icon">🔬</div>
-        <h3>Kollagénindukció</h3>
-        <p>A tű a dermisz felső rétegéig hatol. A bőr sérülésként értelmezi, és megindítja a természetes gyógyulási folyamatot — amelynek mellékterméke az új kollagén és elasztin szintézise.</p>
-      </div>
-      <div class="what-card fade-up">
-        <div class="what-card-icon">💉</div>
-        <h3>Kontrollált mikrosérülés</h3>
-        <p>Nem véletlen traumáról van szó, hanem precízen meghatározott tűmélységről és -sűrűségről. A sérülések elég kicsik ahhoz, hogy gyorsan gyógyuljanak, de elég mélyek a hatáshoz.</p>
-      </div>
-      <div class="what-card fade-up">
-        <div class="what-card-icon">📈</div>
-        <h3>Kumulatív hatás</h3>
-        <p>Egy kezelés is látható eredményt ad, de a valódi átalakulás 4–6 kezelés után következik be. A kollagén átépülése 3–6 hónapos folyamat — a hosszú játékot kell játszani.</p>
-      </div>
-      <div class="what-card fade-up">
-        <div class="what-card-icon">🧬</div>
-        <h3>Növekedési faktorok</h3>
-        <p>A sérülés hatására vérlemezkék aktiválódnak és PDGF, TGF-β növekedési faktorokat szabadítanak fel — ezek irányítják a kollagénszintézist és a szöveti újraépülést.</p>
-      </div>
+<!-- TŰMÉLYSÉG RÉSZLETES (TABS) -->
+<section class="section" id="tumélység">
+  <h2 class="section-title">Tűmélység-útmutató részletesen</h2>
+  <p class="section-sub">Milyen mélységet válassz a céljaidhoz? Válassz lapot, vagy nézd meg a teljes táblázatot.</p>
+
+  <div class="tab-wrap">
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="switchTab(this,'tab-arc')">Arcbőr</button>
+      <button class="tab-btn" onclick="switchTab(this,'tab-haj')">Fejbőr / Haj</button>
+      <button class="tab-btn" onclick="switchTab(this,'tab-heg')">Hegek</button>
+      <button class="tab-btn" onclick="switchTab(this,'tab-osszes')">Teljes táblázat</button>
     </div>
-  </section>
 
-  <div class="divider"></div>
+    <div class="tab-panel active" id="tab-arc">
+      <table class="depth-table">
+        <tr><th>Mélység</th><th>Cél / Hatás</th><th>Megjegyzés</th></tr>
+        <tr><td>0,2&ndash;0,3 mm</td><td>Hatóanyag-bevitel fokozása, finom vonalak</td><td>Napi/heti használat lehetséges</td></tr>
+        <tr><td>0,5 mm</td><td>Textúrajavítás, pórusszűkítés</td><td>Hetente 1x, enyhe regeneráció</td></tr>
+        <tr class="hl"><td>1,0 mm &#9733;</td><td>Kollagénindukció, ráncok, rugalmasság</td><td>Otthoni optimum, 3&ndash;4 hetente</td></tr>
+        <tr><td>1,5 mm</td><td>Mélyebb ráncok, komolyabb kollagénstimuláció</td><td>Körültekintéssel, tapasztalattal</td></tr>
+      </table>
+    </div>
 
-  <!-- HOGYAN MŰKÖDIK -->
-  <section class="section">
-    <div class="section-tag">A folyamat</div>
-    <h2 class="section-title">Hogyan működik<br>lépésről lépésre?</h2>
-    <p class="section-lead">A microneedling utáni bőrreakció három fázison megy keresztül — ezek összessége adja az eredményt.</p>
-
-    <div class="timeline">
-      <div class="timeline-item fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-label">0–2 óra</div>
-        <h3>Gyulladásos fázis</h3>
-        <p>A tű hatására minimális vérzés és azonnali vörösség jelenik meg. Vérlemezkék érkeznek a területre és növekedési faktorokat bocsátanak ki — ez indítja be a regenerációs kaszkádot. A bőr érzékeny, picit meleg tapintású.</p>
-      </div>
-      <div class="timeline-item fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-label">2–72 óra</div>
-        <h3>Proliferatív fázis</h3>
-        <p>Fibroblasztok aktiválódnak és megkezdik az új kollagén és elasztin szintézisét. A bőr vörössége enyhül, de a belső munka itt a legintenzívebb. Ez az az időablak, amikor a centella-alapú utóápolás a legtöbbet segít.</p>
-      </div>
-      <div class="timeline-item fade-up">
-        <div class="timeline-dot"></div>
-        <div class="timeline-label">72 óra – 6 hónap</div>
-        <h3>Átépülési fázis</h3>
-        <p>Az újonnan szintetizált kollagén rendeződik, keresztkötések épülnek. A bőr fokozatosan tömörebbé, simábbá válik. A teljes eredmény 3–6 hónappal az utolsó kezelés után látható.</p>
+    <div class="tab-panel" id="tab-haj">
+      <table class="depth-table">
+        <tr><th>Mélység</th><th>Cél / Hatás</th><th>Megjegyzés</th></tr>
+        <tr><td>0,5 mm</td><td>Hatóanyag-bevitel (minoxidil, peptidek)</td><td>Jó kezdőpont</td></tr>
+        <tr class="hl"><td>1,0 mm &#9733;</td><td>Hajhullás elleni stimuláció, tüszők aktiválása</td><td>Legtöbb kutatásban ez szerepel</td></tr>
+        <tr><td>1,5 mm</td><td>Erős fejbőr-stimuláció</td><td>Klinikai kontroll ajánlott</td></tr>
+      </table>
+      <div class="callout-tip">
+        <strong>Kutatási háttér:</strong> A 2013-as Dhurat-tanulmány kimutatta, hogy 1 mm-es dermastamp + 5% minoxidil szignifikánsan jobb hajszálszám-növekedést eredményezett, mint minoxidil önállóan, 12 héten belül.
       </div>
     </div>
 
-    <div class="depth-visual fade-up">
-      <h3>Tűmélység és célterület</h3>
-      <div class="depth-bars">
-        <div class="depth-bar-row">
-          <div class="depth-bar-label">Felszíni hidratálás</div>
-          <div class="depth-bar-track"><div class="depth-bar-fill" data-width="0.2"></div></div>
-          <div class="depth-bar-val">0.2–0.3 mm</div>
-        </div>
-        <div class="depth-bar-row">
-          <div class="depth-bar-label">Textúra, pórusok</div>
-          <div class="depth-bar-track"><div class="depth-bar-fill" data-width="0.35"></div></div>
-          <div class="depth-bar-val">0.3–0.5 mm</div>
-        </div>
-        <div class="depth-bar-row">
-          <div class="depth-bar-label">Kollagénindukció</div>
-          <div class="depth-bar-track"><div class="depth-bar-fill" data-width="0.65"></div></div>
-          <div class="depth-bar-val">0.5–1.0 mm</div>
-        </div>
-        <div class="depth-bar-row">
-          <div class="depth-bar-label">Hegek, striák</div>
-          <div class="depth-bar-track"><div class="depth-bar-fill" data-width="0.85"></div></div>
-          <div class="depth-bar-val">1.0–1.5 mm</div>
-        </div>
-        <div class="depth-bar-row">
-          <div class="depth-bar-label">Klinikai eljárás</div>
-          <div class="depth-bar-track"><div class="depth-bar-fill" data-width="1"></div></div>
-          <div class="depth-bar-val">1.5–3.0 mm</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- MIRE JÓ -->
-  <section class="section">
-    <div class="section-tag">Indikációk</div>
-    <h2 class="section-title">Mire alkalmazható?</h2>
-    <p class="section-lead">A microneedling az egyik legszélesebb indikációs spektrumú bőrápolási eljárás — klinikai vizsgálatokkal alátámasztva.</p>
-    <div class="benefits-grid">
-      <div class="benefit-card fade-up">
-        <div class="benefit-icon">🪨</div>
-        <h4>Atrófiás hegek</h4>
-        <p>Az akné által hagyott bemélyedt hegek leghatékonyabb nem-klinikai kezelési módja. A kollagénindukció fokozatosan feltölti a sérült szövetet.</p>
-      </div>
-      <div class="benefit-card fade-up">
-        <div class="benefit-icon">🔴</div>
-        <h4>PIE – posztinflammatórikus eritéma</h4>
-        <p>Az akné után visszamaradó vörös foltokat a microneedling az érhálózat normalizálásával és a gyulladásos markerek csökkentésével halványítja.</p>
-      </div>
-      <div class="benefit-card fade-up">
-        <div class="benefit-icon">⏳</div>
-        <h4>Öregedési jelek</h4>
-        <p>Finom ráncok, lazabb bőrtónus, csökkent rugalmasság — mind a kollagénveszteség következménye. A microneedling ezt a folyamatot lassítja és részben visszafordítja.</p>
-      </div>
-      <div class="benefit-card fade-up">
-        <div class="benefit-icon">💧</div>
-        <h4>Bőrtextúra</h4>
-        <p>Tágult pórusok, egyenetlen bőrfelület, "narancsbőr" hatás. Rendszeres kezeléssel a bőr simábbá, egyenletesebbé válik.</p>
-      </div>
-      <div class="benefit-card fade-up">
-        <div class="benefit-icon">💈</div>
-        <h4>Hajhullás (AGA)</h4>
-        <p>Scalp microneedling minoxidillel kombinálva klinikai vizsgálatokban szignifikánsan felülmúlta a minoxidil önálló alkalmazását androgenetikus alopecia esetén.</p>
-      </div>
-      <div class="benefit-card fade-up">
-        <div class="benefit-icon">✨</div>
-        <h4>Hatóanyag penetráció</h4>
-        <p>A mikrosérülések átmenetileg megnyitják a bőr barrierét — a közvetlenül utána felvitt hatóanyagok (pl. centella, peptidek) jóval mélyebbre jutnak el.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- KLINIKA VS OTTHON -->
-  <section class="section">
-    <div class="section-tag">Lehetőségek</div>
-    <h2 class="section-title">Klinikán vagy otthon?</h2>
-    <p class="section-lead">Mindkettőnek megvan a helye. A különbség a tűmélységben, a technikában és a hozzáférhetőségben van.</p>
-
-    <div class="compare-grid">
-      <div class="compare-card fade-up">
-        <div class="compare-header">
-          <div class="compare-badge clinic">Klinikán</div>
-          <h3>Professzionális kezelés</h3>
-          <p>Orvosi felügyelet mellett, helyi érzéstelenítővel, 1.5–3 mm tűmélységgel.</p>
-        </div>
-        <div class="compare-body">
-          <div class="compare-row">
-            <span class="compare-key">Tűmélység</span>
-            <span class="compare-val">1.5–3.0 mm</span>
-          </div>
-          <div class="compare-row">
-            <span class="compare-key">Ár / alkalom</span>
-            <span class="compare-val">30–80.000 Ft</span>
-          </div>
-          <div class="compare-row">
-            <span class="compare-key">Felépülési idő</span>
-            <span class="compare-val">2–5 nap</span>
-          </div>
-          <div class="compare-row">
-            <span class="compare-key">Hozzáférhetőség</span>
-            <span class="compare-val">Időpont, utazás</span>
-          </div>
-          <div class="compare-row">
-            <span class="compare-key">Kezelési frekvencia</span>
-            <span class="compare-val">4–6 hetente</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="compare-card fade-up">
-        <div class="compare-header">
-          <div class="compare-badge home">Otthon</div>
-          <h3>Saját kezeléssel</h3>
-          <p>EU MDR-tanúsított eszközzel, 0.5–1.5 mm tartományban — biztonságosan, rendszeresen.</p>
-        </div>
-        <div class="compare-body">
-          <div class="compare-row">
-            <span class="compare-key">Tűmélység</span>
-            <span class="compare-val">0.5–1.5 mm</span>
-          </div>
-          <div class="compare-row">
-            <span class="compare-key">Ár / kúra</span>
-            <span class="compare-val">Egyszeri befektetés</span>
-          </div>
-          <div class="compare-row">
-            <span class="compare-key">Felépülési idő</span>
-            <span class="compare-val">12–48 óra</span>
-          </div>
-          <div class="compare-row">
-            <span class="compare-key">Hozzáférhetőség</span>
-            <span class="compare-val">Bármikor, otthon</span>
-          </div>
-          <div class="compare-row">
-            <span class="compare-key">Kezelési frekvencia</span>
-            <span class="compare-val">1–2 hetente</span>
-          </div>
-        </div>
-      </div>
+    <div class="tab-panel" id="tab-heg">
+      <table class="depth-table">
+        <tr><th>Mélység</th><th>Cél / Hatás</th><th>Megjegyzés</th></tr>
+        <tr><td>1,0 mm</td><td>Felszínes poszt-aknéhegek</td><td>Jó kezdet, rendszeres kezelés</td></tr>
+        <tr><td>1,5 mm</td><td>Atrófiás aknéhegek (rolling, boxcar)</td><td>Tapasztalattal</td></tr>
+        <tr><td>2,0 mm</td><td>Mélyebb hegek, striák</td><td><span class="clinic-badge">Klinikai ajánlott</span></td></tr>
+        <tr><td>2,5&ndash;3,0 mm</td><td>Mély striák, hypertrofikus hegek</td><td><span class="clinic-badge">Kizárólag klinikán</span></td></tr>
+      </table>
     </div>
 
-    <div class="product-showcase fade-up">
-      <div class="product-showcase-img">
-        <img src="https://cdn.shopify.com/s/files/1/0958/9322/5804/files/4eskep.png?v=1774529512"
-             alt="STINGER ONE dermastamp">
-      </div>
-      <div class="product-showcase-text">
-        <div class="section-tag" style="margin-bottom: 12px;">Otthoni megoldás</div>
-        <h3>Az otthoni microneedling most már nem kompromisszum</h3>
-        <p>A STINGER ONE™ dermastamp EU MDR Class I orvostechnikai eszközként van nyilvántartva az EUDAMED-ben — ez a magyarországi piacon ritkaság. Nem kozmetikai termék, hanem auditált orvostechnikai eszköz, ugyanazzal a hatásmechanizmussal mint a klinikai kezelések, a biztonságos otthoni mélységtartományban.</p>
-        <p>Az ár, a hozzáférhetőség és a rendszeresség szempontjából az otthoni microneedling ma életképes és tudományosan megalapozott alternatíva — ha a megfelelő eszközzel csinálod.</p>
-        <a href="https://dermastamp.hu" class="btn-primary" rel="noopener" style="margin-top: 24px; display: inline-flex;">
-          Megnézem a Dermastamp.hu-n
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+    <div class="tab-panel" id="tab-osszes">
+      <table class="depth-table">
+        <tr><th>Mélység</th><th>Bőrréteg</th><th>Fő alkalmazás</th><th>Ki végezheti?</th></tr>
+        <tr><td>0,2&ndash;0,3 mm</td><td>Epidermisz felszíne</td><td>Hatóanyag-transzport, fénylő bőr</td><td>Otthon, napi</td></tr>
+        <tr><td>0,5 mm</td><td>Epidermisz alja</td><td>Textúra, pórusok</td><td>Otthon, hetente</td></tr>
+        <tr class="hl"><td>1,0 mm &#9733;</td><td>Papilláris dermis</td><td>Kollagén, rugalmasság, haj, ráncok</td><td>Otthon, 3&ndash;4 hetente</td></tr>
+        <tr><td>1,5 mm</td><td>Retikuláris dermis felszíne</td><td>Mélyebb ráncok, hegek</td><td>Tapasztalattal</td></tr>
+        <tr><td>2,0 mm</td><td>Retikuláris dermis közepe</td><td>Striák, mély hegek</td><td>Inkább klinikán</td></tr>
+        <tr><td>2,5&ndash;3,0 mm</td><td>Szubkután határ</td><td>Súlyos hegek, fejbőr-stim.</td><td><span class="clinic-badge">Csak klinikán</span></td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- MIRE ALKALMAZHATÓ -->
+<section class="section" id="indikációk">
+  <h2 class="section-title">Mire alkalmazható a microneedling?</h2>
+  <p class="section-sub">A tudományos irodalom az alábbi területeken vizsgálta a microneedling (mikrotűzés) hatékonyságát:</p>
+
+  <div class="benefit-grid">
+    <div class="benefit-card">
+      <div class="benefit-icon">&#129145;</div>
+      <h3>Öregedési jelek, ráncok</h3>
+      <p>A kollagénindukció csökkenti a finom vonalakat és mélyebb ráncokat. A bőr vastagodik és rugalmasabb lesz rendszeres kezelés után.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">&#127919;</div>
+      <h3>Aknéhegek (atrófiás)</h3>
+      <p>A rolling, boxcar és ice-pick típusú aknéhegekre kiterjedt kutatások állnak rendelkezésre. A dermastamp-technika különösen hatékony pontos területeken.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">&#11044;</div>
+      <h3>Pigmentfoltok, melazma</h3>
+      <p>A mikrosérülések elősegítik a pigment egyenletesebb eloszlását és fokozzák a halványító aktív anyagok (pl. C-vitamin, niacinamid) felszívódását.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">&#128167;</div>
+      <h3>Pórusok, bőrtextúra</h3>
+      <p>A rendszeres 0,5&ndash;1 mm-es kezelések szűkítik a tágult pórusokat és simábbá teszik a bőr felszínét a kollagénhálózat sűrűsödésén keresztül.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">&#128207;</div>
+      <h3>Striák (terhességi csíkok)</h3>
+      <p>A 2 mm körüli tűmélység a striák kollagénhiányos területeit célozza meg. Több kezelés szükséges, de a javulás dokumentált a klinikai irodalomban.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">&#10024;</div>
+      <h3>Általános bőrmegújulás</h3>
+      <p>Szürke, fáradt bőrre: a mikrotűzés beindítja a sejtmegújulást, fokozza az átmeneti vérkeringést és &bdquo;ébreszt&rdquo; hatással van az egész bőrfelszínre.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">&#127807;</div>
+      <h3>Hatóanyag-felszívódás</h3>
+      <p>A mikrosatornákon keresztül a hialuronsav, peptidek, C-vitamin és növekedési faktorok a bőr mélyebb rétegeibe juthatnak &ndash; akár 40&times; hatékonyabban.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">&#128309;</div>
+      <h3>Rosacea és bőrpír</h3>
+      <p>Egyes tanulmányok szerint a microneedling csökkenti a rozácea tüneteit azáltal, hogy erősíti a bőrbarrier-t és csökkenti az érzékenységet &ndash; óvatos protokollal.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon">&#128134;</div>
+      <h3>Fejbőr és hajhullás</h3>
+      <p>A fejbőr mikrotűzése aktiválja a hajhagymákat és fokozza a hajnövesztő szerek (pl. minoxidil) felszívódását. Részletes fejezet lentebb.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- HAJHULLÁS -->
+<section class="section" id="hajhullas">
+  <h2 class="section-title">Microneedling hajhullásra és fejbőrre</h2>
+  <p class="section-sub">A fejbőr mikrotűzése egyre nagyobb figyelmet kap az androgenetikus alopecia (hajhullás) és a diffúz hajritkulás kutatásában.</p>
+
+  <div class="hl-stat-row">
+    <div class="hl-stat">
+      <span class="hl-stat-num">+91%</span>
+      <span class="hl-stat-lbl">hajszálszám növekedés 12 héten belül (Dhurat, 2013 &ndash; 1mm + minoxidil)</span>
+    </div>
+    <div class="hl-stat">
+      <span class="hl-stat-num">1 mm</span>
+      <span class="hl-stat-lbl">legtöbb kutatásban alkalmazott fejbőr-tűmélység</span>
+    </div>
+    <div class="hl-stat">
+      <span class="hl-stat-num">4&ndash;8 hét</span>
+      <span class="hl-stat-lbl">az első eredmények megjelenéséhez szükséges idő</span>
+    </div>
+  </div>
+
+  <div class="scalp-grid">
+    <div class="scalp-card">
+      <h3>Hogyan hat a hajhagymákra?</h3>
+      <p>A mikrotűzés növeli a Wnt3a és béta-katenin szintjét &ndash; ezek kulcsszereplők a hajhagyma regenerációjában. Emellett fokozza a vérellátást és a növekedési faktorok (VEGF, IGF-1) termelődését a fejbőrben.</p>
+    </div>
+    <div class="scalp-card">
+      <h3>Minoxidillel kombinálva</h3>
+      <p>A Dhurat-féle randomizált kontrollált vizsgálat kimutatta: az 1 mm-es dermastamp + 5% minoxidil szignifikánsan hatékonyabb volt, mint az önálló minoxidil. A mikrotűzés javítja a hatóanyag felszívódást és önállóan is serkenti a növekedést.</p>
+    </div>
+    <div class="scalp-card">
+      <h3>Ajánlott protokoll</h3>
+      <p>Tűmélység: 1 mm. Frekvencia: hetente 1x vagy kéthetente. Utána: hialuronsav vagy specifikus hajszerum felvitele a mikrosatornákon. SPF nem szükséges fejbőrön, de napérzékenység fennállhat.</p>
+    </div>
+    <div class="scalp-card">
+      <h3>Kinek nem ajánlott?</h3>
+      <p>Aktív fejbőr-fertőzés, seborrhoeás ekcéma aktív stádiumában, véralvadásgátló szedésekor, autoimmun hajhullás (alopecia areata) esetén orvosi konzultáció előtt ne végezd.</p>
+    </div>
+  </div>
+
+  <div class="callout-tip" style="margin-top:24px">
+    <strong>Megjegyzés a kutatásokról:</strong> A microneedling hajhullásra vonatkozó vizsgálatok ígéretesek, de a legtöbb kis mintán készült. A módszer nem gyógyítja meg az androgenetikus alopecia genetikai okát &ndash; kiegészítő eszköz, nem önálló gyógyszer.
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- KLINIKA VS OTTHON -->
+<section class="section" id="klinika-vs-otthon">
+  <h2 class="section-title">Klinika vs. otthoni mikrotűzés</h2>
+  <p class="section-sub">Mindkét megközelítésnek megvan a helye &ndash; a tűmélység és a cél határozza meg, melyiket érdemes választani.</p>
+
+  <div class="compare-grid">
+    <div class="compare-col">
+      <h3>&#127973; Klinikai kezelés</h3>
+      <ul class="compare-list">
+        <li data-icon="&#10003;">1,5&ndash;3,0 mm tűmélység, helyi érzéstelenítéssel</li>
+        <li data-icon="&#10003;">Súlyos hegek, striák, mély ráncok</li>
+        <li data-icon="&#10003;">Orvosi felügyelet, steril körülmények</li>
+        <li data-icon="&#10003;">PRP (vérplazma) vagy más aktív anyagok injektálása</li>
+        <li data-icon="&#8722;" style="color:var(--muted)">Magas ár (20&nbsp;000&ndash;80&nbsp;000 Ft/alkalom)</li>
+        <li data-icon="&#8722;" style="color:var(--muted)">Hosszabb gyógyulási idő (3&ndash;5 nap vörösség)</li>
+      </ul>
+    </div>
+    <div class="compare-col">
+      <h3>&#127968; Otthoni kezelés</h3>
+      <ul class="compare-list">
+        <li data-icon="&#10003;">0,2&ndash;1,5 mm tűmélység</li>
+        <li data-icon="&#10003;">Karbantartás, megelőzés, hatóanyag-bevitel</li>
+        <li data-icon="&#10003;">Rendszeres, kényelmes rutinba illeszthető</li>
+        <li data-icon="&#10003;">Hajhullás kiegészítő kezelése</li>
+        <li data-icon="&#8722;" style="color:var(--muted)">Nem helyettesít klinikai kezelést súlyos esetekben</li>
+        <li data-icon="&#8722;" style="color:var(--muted)">Feltétel: megfelelő higiénia és technika</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="product-showcase">
+    <div class="product-text">
+      <h3>Keresed a megbízható otthoni dermastampet?</h3>
+      <p>A Dermastamp.hu-n találsz kifejezetten otthoni használatra tervezett, orvostechnikai eszközként (CE, MDR Class I) minősített dermastampet &ndash; EUDAMED regisztrált. Ha megértetted az elveket és az 1 mm-es protokollt, nézd meg a kínálatot.</p>
+      <a class="btn-primary" href="https://dermastamp.hu/products/dermastamp?utm_source=microneedling-hu&utm_medium=referral&utm_campaign=bridge#ProductInfo-template--29103183954252__main">Dermastamp megnézése &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- DERMASTAMP VS DERMAROLLER VS DERMAPEN -->
+<section class="section" id="eszkozok">
+  <h2 class="section-title">Dermastamp vs. dermaroller vs. dermapen</h2>
+  <p class="section-sub">Mindhárom eszköz mikrotűzést végez, de különböző mechanizmussal és alkalmazási területtel.</p>
+
+  <div class="triple-compare">
+    <div class="triple-col featured">
+      <h3>Dermastamp / Derma stamp</h3>
+      <span class="triple-badge">Pontos / Stamp technika</span>
+      <ul class="triple-list">
+        <li>Bélyegző (stamp) mozgás &ndash; vertikális tűszúrás</li>
+        <li>Pontos területekre: hegek, foltok</li>
+        <li>Kisebb tépési erő a tűkön</li>
+        <li>Könnyebb a mélység tartása</li>
+        <li>Fejbőrre is ideális</li>
+        <li>Kisebb eszköz, könnyebb manőverezni</li>
+      </ul>
+    </div>
+    <div class="triple-col">
+      <h3>Dermaroller / Derma roller</h3>
+      <span class="triple-badge" style="background:var(--amber-dim);color:var(--amber);border-color:rgba(245,158,11,.25)">Hengeres / Roll technika</span>
+      <ul class="triple-list">
+        <li>Hengergörgő, roll mozgás</li>
+        <li>Nagy területek gyorsabb lefedése</li>
+        <li>Tépő szög a tűk belépésekor/kilépésekor</li>
+        <li>Arc, nyak, dékolté lefedése</li>
+        <li>Fejbőrre kevésbé kényelmes</li>
+        <li>Mélység tartása kevésbé precíz</li>
+      </ul>
+    </div>
+    <div class="triple-col">
+      <h3>Dermapen / Microneedling toll</h3>
+      <span class="triple-badge" style="background:var(--green-dim);color:var(--green);border-color:rgba(52,211,153,.25)">Motoros / Automata</span>
+      <ul class="triple-list">
+        <li>Motoros, automatikus tűmozgás</li>
+        <li>Állítható mélység és sebesség</li>
+        <li>Klinikán elterjedt</li>
+        <li>Legdrágább kategória</li>
+        <li>Professzionális eredmény</li>
+        <li>Fertőtlenítés kritikus</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout-tip" style="margin-top:24px">
+    <strong>A &bdquo;derma stamp&rdquo; és &bdquo;dermastamp&rdquo; ugyanaz?</strong> Igen &ndash; mindkét írásmód (egybe és külön) ugyanarra az eszköztípusra utal. A &bdquo;derma roller&rdquo; és &bdquo;dermaroller&rdquo; szintén felcserélhető. A különbség az eszköz formájában van, nem az elnevezésben.
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- VÁSÁRLÁSI SZEMPONTOK -->
+<section class="section" id="eszkozvalasztas">
+  <h2 class="section-title">Mit nézzünk vásárlásnál?</h2>
+  <p class="section-sub">Nem minden microneedling eszköz egyforma. Ezek az elsődleges szempontok, amelyekre figyelj:</p>
+
+  <div class="criteria-grid">
+    <div class="criteria-card">
+      <h3>Orvostechnikai minősítés</h3>
+      <p>EU-ban a dermastamp orvostechnikai eszköz (MDR Class I). Keresd a CE jelölést és az EUDAMED regisztrációt. Ez garancia a minimális biztonsági standardokra.</p>
+    </div>
+    <div class="criteria-card">
+      <h3>Tű anyaga és minősége</h3>
+      <p>316L orvosi acél az alap. A tűk élesek legyenek és sérülésmentesek. Egyszer használatos vagy sterilizálható fejek előnyt jelentenek.</p>
+    </div>
+    <div class="criteria-card">
+      <h3>Tűmélység-beállítás</h3>
+      <p>Lehetőleg állítható mélységű eszközt válassz, vagy ellenőrizd, hogy a fix mélység megfelel-e a céljaidnak. Kezdőknek 0,5&ndash;1 mm közötti tartomány ajánlott.</p>
+    </div>
+    <div class="criteria-card">
+      <h3>Tűsűrűség (pin count)</h3>
+      <p>36&ndash;49 tű az általánosan bevált szám a dermastampekben. Kevesebb tű = ritkább lefedettség, több tű = egyenletesebb, de több nyomás szükséges.</p>
+    </div>
+    <div class="criteria-card">
+      <h3>Tisztíthatóság</h3>
+      <p>Az eszközt minden használat előtt és után fertőtleníteni kell 70%-os izopropil-alkohollal. Legyen a fejrész levehető vagy könnyen kezelhetető.</p>
+    </div>
+    <div class="criteria-card">
+      <h3>Átlátható márka</h3>
+      <p>Ellenőrizd, hogy az eladó megad-e regisztrációs számot, ismerteti-e az eszköz specifikációit, és elérhetők-e a biztonsági információk. Az anonim, jelöletlen eszközöket kerüld.</p>
+    </div>
+  </div>
+
+  <div class="bridge-box">
+    <div class="bridge-box-text">
+      <h3>Megvannak a szempontjaid?</h3>
+      <p>A Dermastamp.hu pontosan ezeket a feltételeket teljesíti: CE, MDR Class I, EUDAMED, átlátható leírás, kizárólag bőr mikrotűzési eljárásokhoz. Ha kész vagy, nézd meg a terméket:</p>
+    </div>
+    <a class="btn-primary" href="https://dermastamp.hu/products/dermastamp?utm_source=microneedling-hu&utm_medium=referral&utm_campaign=bridge#ProductInfo-template--29103183954252__main">Dermastamp.hu &rarr;</a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- BIZTONSÁGI PROTOKOLL -->
+<section class="section" id="biztonsag">
+  <h2 class="section-title">Biztonsági protokoll &ndash; Mit tegyél, mit ne?</h2>
+  <p class="section-sub">A microneedling biztonságos &ndash; ha helyesen csinálod. A leggyakoribb problémák szinte mind protokollhibából erednek.</p>
+
+  <div class="do-dont-grid">
+    <div class="do-box">
+      <h3>Tedd ezeket</h3>
+      <ul class="do-dont-list">
+        <li><span>Tisztítsd meg az eszközt 70%-os izopropil-alkohollal használat előtt és után</span></li>
+        <li><span>Tisztítsd meg alaposan a bőrfelületet kezelés előtt</span></li>
+        <li><span>Használj hialuronsav szérumot a kezelés alatt és utána</span></li>
+        <li><span>Kerüld a napfényt 24&ndash;48 óráig kezelés után</span></li>
+        <li><span>Viselj SPF 30+ fényvédőt a következő napokban</span></li>
+        <li><span>Kezdj kisebb mélységgel és fokozd az idő múlásával</span></li>
+        <li><span>Várd meg a teljes gyógyulást (7&ndash;14 nap) a következő kezelés előtt</span></li>
+        <li><span>Tárold száraz, védett helyen, a kupakot tedd vissza</span></li>
+      </ul>
+    </div>
+    <div class="dont-box">
+      <h3>Kerüld ezeket</h3>
+      <ul class="do-dont-list">
+        <li><span>Aktív pattanás, bőrfertőzés, ekcéma felett NE végezz mikrotűzést</span></li>
+        <li><span>Ne nyomj túl erősen &ndash; a saját súlyod elegendő</span></li>
+        <li><span>Ne használj C-vitamint vagy retinolt közvetlenül kezelés után (irritáció)</span></li>
+        <li><span>Ne menj szaunába, uszodába 48 óráig a kezelés után</span></li>
+        <li><span>Ne ossz meg eszközt más személlyel</span></li>
+        <li><span>Ne kezeld a szemkörnyéket, ajkakat, szemöldököt</span></li>
+        <li><span>Ne kezelj keloid-hajlamú területeket</span></li>
+        <li><span>Véralvadásgátló szedésekor orvosi konzultáció nélkül ne kezdj bele</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout-warn" style="margin-top:24px">
+    <strong>Fontos:</strong> Terhesség, aktív herpesz, kezeletlen bőrbetegség, autoimmun állapot esetén a microneedling megkezdése előtt konzultálj bőrgyógyász szakorvossal.
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- TUDOMÁNYOS VIZSGÁLATOK -->
+<section class="section" id="tudomany">
+  <h2 class="section-title">Tudományos vizsgálatok és háttér</h2>
+  <p class="section-sub">A microneedling nem &bdquo;wellness trend&rdquo; &ndash; peer-reviewed kutatások százai foglalkoznak a hatásmechanizmussal és az eredményekkel. Íme a legfontosabbak:</p>
+
+  <div class="study-list">
+    <div class="study-item">
+      <button class="study-q" onclick="toggleStudy(this)">
+        <span class="study-year">2008</span>
+        Collagen Induction Therapy &ndash; Fernandes &amp; Signorini
+        <span class="study-icon">+</span>
+      </button>
+      <div class="study-a">
+        Fernandes és Signorini 2008-as mérföldkő publikációja igazolta, hogy a microneedling szignifikánsan növeli a kollagén I, III és VII termelését anélkül, hogy a bőr felső rétegét (epidermiszt) eltávolítaná. Ez vetette meg a CIT (Collagen Induction Therapy) fogalmi alapját. A tanulmány megmutatta, hogy a tűmélység &ndash; nem a tűk száma &ndash; a döntő faktor a kollagénstimuláció erősségében.
       </div>
     </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- FAQ -->
-  <section class="section">
-    <div class="section-tag">Kérdések</div>
-    <h2 class="section-title">Amit a legtöbben kérdeznek</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Fáj a microneedling?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">Otthoni, 0.5–1.0 mm-es mélységnél a legtöbben enyhe bizsergést éreznek, de nem fájdalmasat. A klinikai kezelések — ahol helyi érzéstelenítőt is alkalmaznak — intenzívebbek, de azzal is kezelhetőek. A fejbőr érzékenyebb mint az arc, ott valamivel intenzívebb az érzés.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Milyen gyakran érdemes csinálni?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">Otthoni kezelésnél 1.0 mm-ig elegendő 1–2 hetente. 1.0 mm felett legalább 2–4 hét szünet javasolt a teljes regenerációhoz. A bőrnek időre van szüksége a kollagén felépítéséhez — a „minél több, annál jobb" itt nem igaz, sőt, kontraproduktív lehet.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Mikor látszanak az eredmények?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">Az első kezelés után 24–72 óran belül a bőr "tömörebbnek" érezhető — ez az azonnali gyulladásos válasz és a fokozott vérkeringés hatása. Látható, tartós eredmény 3–6 kezelés után jelenik meg. A kollagén átépülése 3–6 hónapos folyamat, ezért az utolsó kezelés után is folytatódik a javulás.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Kinek nem ajánlott?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">Aktív akné, rosacea, ekcéma vagy psoriasis esetén kerüld a gyulladt területeket. Keloid-hajlamos bőrnél fokozott óvatosság szükséges. Antikoaguláns gyógyszerszedés, aktív herpesz fertőzés, vagy lézeres kezelés utáni 2–4 héten belül szintén nem javasolt. Ha bizonytalan vagy, konzultálj bőrgyógyásszal.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Milyen utóápolás szükséges?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">Az első 24–72 óra a legkritikusabb: kerüld az aktív hatóanyagokat (retinoid, sav, C-vitamin). Ajánlott: centella alapú ampoule vagy szérum, barrier krém és SPF50+. Kerüld a közvetlen napfényt, az izzasztó edzést és az alkoholt az első napon. Smink az első 24 órában nem javasolt.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Dermastamp vagy dermaroller — mi a különbség?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a">A dermaroller gördülő mozgással, ferde szögben szúrja a bőrt — ez nagyobb átmeneti traumát okoz és az arc ívelt részein kevésbé precíz. A dermastamp (bélyegző mozdulattal) merőlegesen szúr, egyenletesebb mélységet biztosít és kisebb a szöveti húzás. A legtöbb bőrgyógyász ma a stamp technikát preferálja otthoni használatnál.</div>
+    <div class="study-item">
+      <button class="study-q" onclick="toggleStudy(this)">
+        <span class="study-year">2013</span>
+        Dermastamp + Minoxidil hajhullásra &ndash; Dhurat et al. (RCT)
+        <span class="study-icon">+</span>
+      </button>
+      <div class="study-a">
+        Ez az RCT 100 beteget vizsgált androgenetikus alopecia esetén. Az 1 mm dermastamp + 5% minoxidil kombináció 91%-os hajszálszám-növekedést mutatott 12 hét alatt, míg az önálló minoxidil csoportban ez az arány 22% volt. A kutatás javasolta, hogy a microneedling a Wnt/&beta;-catenin útvonalon aktiválja a hajhagymákat. Forrás: International Journal of Trichology, 2013.
       </div>
     </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="cta-inner">
-      <div class="section-tag">Dermastamp.hu</div>
-      <h2 class="section-title">Kezdj el helyesen<br>microneedlingelni</h2>
-      <p>Az EU MDR-tanúsított STINGER ONE™ dermastamp — magyarországi forgalmazásban, teljes dokumentációval, tudományos alapon.</p>
-      <div class="cta-product-box">
-        <div class="cta-product-icon">💉</div>
-        <div class="cta-product-info">
-          <h4>STINGER ONE™ dermastamp</h4>
-          <p>EUDAMED-regisztrált Class I orvostechnikai eszköz — a hazai piacon ritkaság</p>
-        </div>
+    <div class="study-item">
+      <button class="study-q" onclick="toggleStudy(this)">
+        <span class="study-year">2015</span>
+        Microneedling vs. kémiai peeling aknéhegekre &ndash; Majid
+        <span class="study-icon">+</span>
+      </button>
+      <div class="study-a">
+        Majid 2015-ös vizsgálatában atrófiás aknéhegeket kezeltek microneedlinggel (1,5 mm dermapen) és kémiai peelinggel (trichloroecetsav). A microneedling csoport szignifikánsan jobb eredményeket mutatott mind a heg mélységének csökkentésében, mind a beteg-elégedettségben. A bőrszín-változás (PIH) kockázata is alacsonyabb volt a microneedling csoportban &ndash; különösen sötétebb bőrtónusoknál.
       </div>
-      <a href="https://dermastamp.hu" class="btn-primary" rel="noopener" style="font-size: 16px; padding: 16px 32px;">
-        Megnézem a Dermastamp.hu-n
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
     </div>
-  </section>
+    <div class="study-item">
+      <button class="study-q" onclick="toggleStudy(this)">
+        <span class="study-year">2018</span>
+        Hatóanyag-transzport és mikrosatornák &ndash; Badran et al.
+        <span class="study-icon">+</span>
+      </button>
+      <div class="study-a">
+        Badran és munkatársai kimutatták, hogy a mikrosatornák akár 40-szeres hatóanyag-penetrációt tesznek lehetővé a kezelt területen. Ez különösen jelentős a hialuronsav (nagy molekula), C-vitamin-derivátumok, réz-peptidek és EGF (epidermális növekedési faktor) esetén. A csatornák 2&ndash;72 óra alatt záródnak be &ndash; ebben az ablakban a legjobb a felszívódás.
+      </div>
+    </div>
+    <div class="study-item">
+      <button class="study-q" onclick="toggleStudy(this)">
+        <span class="study-year">2022</span>
+        Szisztematikus review: microneedling hatékonysága és biztonságossága &ndash; Kim et al.
+        <span class="study-icon">+</span>
+      </button>
+      <div class="study-a">
+        Kim és munkatársai 2022-es szisztematikus áttekintése 47 klinikai tanulmányt elemzett. Következtetéseik: a microneedling biztonságos és hatékony módszer arcöregedés, aknéhegek, melazma és sztriae kezelésére. A legtöbb mellékhatás (bőrpír, duzzanat) átmeneti és 24&ndash;72 óra alatt elmúlik. Súlyos szövődmény (fertőzés, hegképzés) kizárólag protokollhiba esetén fordult elő a vizsgált esetekben.
+      </div>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <div class="footer-brand">microneedling<span>.hu</span></div>
-    <p>Edukációs tartalom — nem minősül orvosi tanácsadásnak.</p>
-    <a href="https://dermastamp.hu" rel="noopener">dermastamp.hu →</a>
-  </footer>
+<hr class="divider">
 
-  <script>
-    function toggleFaq(btn) {
-      const item = btn.closest('.faq-item');
-      item.classList.toggle('open');
-    }
+<!-- FAQ -->
+<section class="section" id="gyik">
+  <h2 class="section-title">Gyakori kérdések (GYIK)</h2>
+  <div class="faq-list">
 
-    // Fade-up on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Fáj a microneedling? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Az érzés a tűmélységtől és a bőrterülettől függ. 0,5&ndash;1 mm esetén általában enyhe bizsergés, esetleg kellemetlen érzés, de nem fájdalmas. Az érzékenyebb területeken (homlok, áll, fejbőr) erősebb érzet előfordulhat. 1,5 mm felett klinikán helyi érzéstelenítőkrémet szoktak alkalmazni.</div>
+    </div>
 
-    // Animate depth bars when visible
-    const barObserver = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          const fills = e.target.querySelectorAll('.depth-bar-fill');
-          fills.forEach((fill, i) => {
-            const w = parseFloat(fill.dataset.width);
-            fill.style.width = (w * 100) + '%';
-            setTimeout(() => fill.classList.add('animated'), i * 120);
-          });
-          barObserver.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.3 });
-    document.querySelectorAll('.depth-visual').forEach(el => barObserver.observe(el));
-  </script>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Milyen sűrűn végezzük otthon? <span class="faq-icon">+</span></button>
+      <div class="faq-a">1 mm-es mélységnél az ajánlott frekvencia 3&ndash;4 hetente egyszer. A bőrnek szüksége van a regenerációra a kezelések között. 0,5 mm esetén akár hetente egyszer is elvégezhető. A &bdquo;több = jobb&rdquo; elv itt nem érvényes &ndash; a túl sűrű kezelés lelassítja a regenerációt.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Mikor látom az első eredményeket? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Az azonnali (24&ndash;48 óra) hatás: javuló bőrszín, egészségesebb komplexió a fokozott vérkeringés miatt. Textúrajavulás: 2&ndash;4 hét. Ráncokra, hegekre vonatkozó tartós eredmény: 2&ndash;3 kezelés után, 6&ndash;12 héten belül. A kollagén-remodelling folyamata azonban 12&ndash;24 hónapig tart.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Dermastamp vagy dermaroller &ndash; melyiket válasszam? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Ha specifikus területeket szeretnél kezelni (aknéheg, pigmentfolt, hajhullás-zóna), a dermastamp pontosabb és kevésbé traumatikus, mert vertikálisan szúr be. A dermaroller gyorsabban fed le nagy területeket, de a görgős mozgás során a tűk ferde szögben lépnek be és ki, ami extra húzóerőt jelent.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Milyen szérumot használjak? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Kezelés közben és közvetlenül utána: hialuronsav (alacsony molekulasúlyú vagy multi-molekuláris). 24&ndash;48 óra elteltével: peptidek, réz-peptidek, EGF szérumok. Kerülendő az első 24 órában: erős savak (AHA, BHA), retinol, C-vitamin. Parfümös termékeket szintén kerüld a nyílt mikrosatornákon.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Mekkora vérzés normális? <span class="faq-icon">+</span></button>
+      <div class="faq-a">0,5 mm esetén szinte semmi, esetleg enyhe vörösség. 1 mm esetén minimális pontszerű vérzés előfordulhat &ndash; ez normális és azt jelzi, hogy elérted a dermist. Folyamatos vérzés vagy nagy területen való vérzés nem normális &ndash; csökkentsd a nyomást vagy a mélységet.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Hogyan fertőtlenítsük az eszközt? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Használat előtt és után 70%-os izopropil-alkohollal (IPA) fújd le, majd hagyd megszáradni levegőn &ndash; ne töröld le (a törlés letöri a tűket). Ne forralj (hő tönkreteszi az acélt), ne márts vízbe. Az alkohol behatási ideje legalább 30 másodperc. Tárold a védőkupakban, szobahőmérsékleten.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Mikor cseréljük a tűfejét / eszközt? <span class="faq-icon">+</span></button>
+      <div class="faq-a">A tűk 5&ndash;15 használat után tompulnak &ndash; ez egyénenként változik. Ha a kezelés szokatlanul kellemetlen, kapar vagy húz a szokottnál jobban, a tűk tompa lettek. A csereidőpontot befolyásolja a nyomás ereje, az alkoholfertőtlenítés és a tárolás. Inkább cseréld korábban &ndash; a tompa tű több kárt okoz.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Microneedling sötétebb bőrtónuson biztonságos? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Igen, a microneedling az egyik legbiztonságosabb kezelés Fitzpatrick IV&ndash;VI típusú bőrön is, mert nem termikus energiát (lézer, IPL) használ, így a PIH (posztinflammatórikus hiperpigmentáció) kockázata jóval alacsonyabb. Kerüld a napsütést és az erős irradiatív hatásokat az utókezelési időszakban.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Mikrotűzés és retinol &ndash; kombinálhatók? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Kombinálhatók, de nem egyidejűleg. A retinolt 3&ndash;5 nappal a kezelés előtt és 24&ndash;48 óráig utána is szüneteltetni érdemes, mivel bőr érzékenységét növeli. A kezelési napon semmiképp. Visszaállítás után a retinol és a microneedling hatása szinergikus &ndash; mindkettő a kollagéntermelést támogatja.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Mikrotűzés terhesség és szoptatás alatt? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Terhesség és szoptatás alatt a microneedling elvégzése általánosan nem ajánlott &ndash; nem azért, mert bizonyítottan káros, hanem mert nem áll rendelkezésre elegendő vizsgálat ezekre a periódusokra. Konzultálj orvossal, ha szükségesnek érzed.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Mire kell figyelni égési heg kezelésekor? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Égési hegek esetén a microneedling segíthet, de csak teljes gyógyulás után (legalább 6&ndash;12 hónap) és orvosi jóváhagyással. Az aktív vagy friss égési sérülést soha ne kezeld. Érett, stabil hégen az 1&ndash;1,5 mm-es mikrotűzés javíthatja a heg textúráját és rugalmasságát, de klinikai kontroll alatt ajánlott.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">A microneedling helyettesíti a bőrgyógyászt? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Nem. Az otthoni mikrotűzés egy karbantartó és megelőző eszköz, nem diagnózis és nem kezelés. Aktív bőrbetegségek (rosacea, psoriasis, ekcéma), klinikai szintű hegek, melazma, vagy ismeretlen bőrelváltozás esetén bőrgyógyász vizsgálat szükséges. A microneedling az egészséges bőr optimalizálásának eszköze.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Mennyi idő kell az eredményekhez &ndash; mikor adjam fel? <span class="faq-icon">+</span></button>
+      <div class="faq-a">A kollagénciklus 28&ndash;45 nap. Az első mérhető eredmények (textúra, feszesség) általában 2&ndash;3 kezelés (6&ndash;12 hét) után jelennek meg. Aknéhegekre és ráncokra 6+ kezelés ajánlott. Ha 3 hónap és 4&ndash;6 kezelés után semmilyen változás nem érezhető, érdemes átnézni a protokollt vagy bőrgyógyásszal konzultálni.</div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2>Készen állsz a mikrotűzésre?</h2>
+    <p>Ha végigolvastad az útmutatót és megértetted az alapelveket, az 1 mm-es otthoni protokollt és a biztonsági szabályokat &ndash; ideje egy megbízható eszközt választani. A Dermastamp.hu-n CE minősítésű, MDR Class I besorolt, EUDAMED regisztrált dermastampet találsz, kifejezetten bőr mikrotűzési eljárásokhoz.</p>
+    <a class="btn-primary" style="font-size:17px; padding:16px 36px;" href="https://dermastamp.hu/products/dermastamp?utm_source=microneedling-hu&utm_medium=referral&utm_campaign=bridge#ProductInfo-template--29103183954252__main">Megnézem a Dermastamp.hu-n &rarr;</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2025 microneedling.hu &mdash; informatív útmutató a mikrotűzésről | <a href="https://dermastamp.hu?utm_source=microneedling-hu&utm_medium=referral&utm_campaign=bridge">Dermastamp.hu</a></p>
+  <p style="margin-top:8px; font-size:12px;">Ez az oldal tájékoztató jellegű. Nem minősül orvosi tanácsnak. Egészségügyi kérdésekben konzultálj szakorvossal.</p>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    btn.closest('.faq-item').classList.toggle('open');
+  }
+  function toggleStudy(btn) {
+    btn.closest('.study-item').classList.toggle('open');
+  }
+  function switchTab(btn, panelId) {
+    var wrap = btn.closest('.tab-wrap');
+    wrap.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    wrap.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+    btn.classList.add('active');
+    document.getElementById(panelId).classList.add('active');
+  }
+</script>
 </body>
 </html>
